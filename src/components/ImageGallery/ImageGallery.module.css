@@ -1,0 +1,38 @@
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Вирівнюємо всі елементи по центру */
+    flex-wrap: wrap;
+    /* Дозволяємо переноси, якщо елементів забагато */
+    gap: 15px;
+    /* Однакові відступи між елементами */
+    padding: 0;
+    margin: 0 auto;
+    /* Вирівнюємо весь список */
+}
+
+.listItem {
+    border: 1px solid yellow;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    /* Елементи всередині картки розташовуються по вертикалі */
+    gap: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    /* Однаковий розмір для карток */
+    align-items: center;
+    /* Вирівнювання контенту по центру */
+}
+
+.listItem img {
+    width: 100%;
+    height: 100%;
+    /* Забезпечення адаптивності картинок */
+    object-fit: cover;
+    /* Акуратний вигляд з обрізанням, якщо потрібно */
+    border-radius: 4px;
+    /* Радіус для узгодження з карткою */
+}
